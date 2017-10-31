@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>math.js | plot</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.5/math.min.js"></script>
+
+  <!-- load http://maurizzzio.github.io/function-plot/ -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+</head>
+<body>
+ <h2>Tarea 2</h2>
+  <button type="button" class="btn btn-primary btn-md" id="polinomio">Graficar Cuadratico</button>
+  <button type="button" class="btn btn-primary btn-md" id="geometrico">Triangulo</button>
+<form id="xorm">
+  <label for="eq" id="entryText">Ingresa los coeficientes los coeficientes cuadráticos:</label>
+  <div><br>
+    <input type="hidden" name="tipo" value="0" id="flag"/>
+  <input type="number" id="eq" />
+  <input type="number" id="eq1"  />
+  <input type="number" id="eq2"  />
+    <br>
+    <button type="button" value="Enviar!" id="send">Graficar</button>
+    <button type="button" value="Enviar!" id="send2">Vertice</button>
+  <div id="plot"></div>
+      <canvas id="myCanvas"></canvas>
+
+</body>
+</html>
